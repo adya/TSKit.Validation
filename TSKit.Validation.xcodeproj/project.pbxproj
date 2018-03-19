@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00270D8220603CCB002C778D /* TSKit_Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 00270D8020603CCB002C778D /* TSKit_Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006182C5206046040079DD8C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 006182C3206046040079DD8C /* Cartfile */; };
 		00C2C3EB1FE334CA00721731 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3EA1FE334CA00721731 /* TSKit_ValidationTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -16,6 +17,7 @@
 		00270D7E20603CCB002C778D /* TSKit_Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSKit_Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00270D8020603CCB002C778D /* TSKit_Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKit_Validation.h; sourceTree = "<group>"; };
 		00270D8120603CCB002C778D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006182C3206046040079DD8C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		00B6D0721FF14C4A0040D62F /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		00C2C3DF1FE334CA00721731 /* TSKit_Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKit_Validation.h; sourceTree = "<group>"; };
 		00C2C3E01FE334CA00721731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				00C2C3F81FE3355100721731 /* Sources */,
+				006182C3206046040079DD8C /* Cartfile */,
 				00C2C3DF1FE334CA00721731 /* TSKit_Validation.h */,
 				00C2C3E01FE334CA00721731 /* Info.plist */,
 			);
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006182C5206046040079DD8C /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +283,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = TSKit.Validation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -300,6 +305,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = TSKit.Validation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
