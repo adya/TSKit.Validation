@@ -2,8 +2,8 @@
 //  TSKit_Validation.h
 //  TSKit.Validation
 //
-//  Created by Arkadiy Glushchevsky on 12/15/17.
-//  Copyright © 2017 Arkadiy Glushchevsky. All rights reserved.
+//  Created by Arkadiy Glushchevsky on 3/19/18.
+//  Copyright © 2018 Arkadiy Glushchevsky. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

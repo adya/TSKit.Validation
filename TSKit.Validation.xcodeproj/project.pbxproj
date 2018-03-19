@@ -7,43 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B6D0731FF14C4A0040D62F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6D0721FF14C4A0040D62F /* Validatable.swift */; };
-		00B6D0751FF15CA30040D62F /* TSKit_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6D0761FF15CA30040D62F /* TSKit_Log.framework */; };
-		00C2C3E61FE334CA00721731 /* TSKit_Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C2C3DC1FE334CA00721731 /* TSKit_Validation.framework */; };
+		00270D8220603CCB002C778D /* TSKit_Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 00270D8020603CCB002C778D /* TSKit_Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00C2C3EB1FE334CA00721731 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3EA1FE334CA00721731 /* TSKit_ValidationTests.swift */; };
-		00C2C3ED1FE334CA00721731 /* TSKit_Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C2C3DF1FE334CA00721731 /* TSKit_Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00C2C40B1FE3356B00721731 /* ClosureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3F91FE3356900721731 /* ClosureValidator.swift */; };
-		00C2C40C1FE3356B00721731 /* NumbersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FA1FE3356900721731 /* NumbersValidator.swift */; };
-		00C2C40D1FE3356B00721731 /* Countable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FB1FE3356900721731 /* Countable.swift */; };
-		00C2C40E1FE3356B00721731 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FC1FE3356900721731 /* EmailValidator.swift */; };
-		00C2C4101FE3356B00721731 /* PatternValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FE1FE3356900721731 /* PatternValidator.swift */; };
-		00C2C4111FE3356B00721731 /* LettersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FF1FE3356900721731 /* LettersValidator.swift */; };
-		00C2C4121FE3356B00721731 /* UrlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4001FE3356A00721731 /* UrlValidator.swift */; };
-		00C2C4131FE3356B00721731 /* ValidatableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4011FE3356A00721731 /* ValidatableProperty.swift */; };
-		00C2C4141FE3356B00721731 /* NonEmptyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4021FE3356A00721731 /* NonEmptyValidator.swift */; };
-		00C2C4161FE3356B00721731 /* CompoundValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4041FE3356A00721731 /* CompoundValidator.swift */; };
-		00C2C4171FE3356B00721731 /* LengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4051FE3356A00721731 /* LengthValidator.swift */; };
-		00C2C4181FE3356B00721731 /* InvertedValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4061FE3356A00721731 /* InvertedValidator.swift */; };
-		00C2C4191FE3356B00721731 /* AnyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4071FE3356A00721731 /* AnyValidator.swift */; };
-		00C2C41A1FE3356B00721731 /* NilValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4081FE3356A00721731 /* NilValidator.swift */; };
-		00C2C41B1FE3356B00721731 /* AnyValidatableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4091FE3356A00721731 /* AnyValidatableViewModel.swift */; };
-		00C2C41C1FE3356B00721731 /* ValueValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C40A1FE3356B00721731 /* ValueValidator.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		00C2C3E71FE334CA00721731 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00C2C3D31FE334CA00721731 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00C2C3DB1FE334CA00721731;
-			remoteInfo = TSKit.Validation;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		00270D7720603B04002C778D /* TSKit_Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSKit_Core.framework; path = Carthage/Build/iOS/TSKit_Core.framework; sourceTree = "<group>"; };
+		00270D7E20603CCB002C778D /* TSKit_Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSKit_Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00270D8020603CCB002C778D /* TSKit_Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKit_Validation.h; sourceTree = "<group>"; };
+		00270D8120603CCB002C778D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B6D0721FF14C4A0040D62F /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
-		00B6D0761FF15CA30040D62F /* TSKit_Log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TSKit_Log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		00C2C3DC1FE334CA00721731 /* TSKit_Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSKit_Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C2C3DF1FE334CA00721731 /* TSKit_Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKit_Validation.h; sourceTree = "<group>"; };
 		00C2C3E01FE334CA00721731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C2C3E51FE334CA00721731 /* TSKit.ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSKit.ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,11 +41,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00C2C3D81FE334CA00721731 /* Frameworks */ = {
+		00270D7A20603CCB002C778D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B6D0751FF15CA30040D62F /* TSKit_Log.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +52,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C2C3E61FE334CA00721731 /* TSKit_Validation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00270D7F20603CCB002C778D /* TSKit.Validation */ = {
+			isa = PBXGroup;
+			children = (
+				00270D8020603CCB002C778D /* TSKit_Validation.h */,
+				00270D8120603CCB002C778D /* Info.plist */,
+			);
+			path = TSKit.Validation;
+			sourceTree = "<group>";
+		};
 		00B6D0711FF145A00040D62F /* Default Validators */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +89,7 @@
 		00B6D0741FF15CA30040D62F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00B6D0761FF15CA30040D62F /* TSKit_Log.framework */,
+				00270D7720603B04002C778D /* TSKit_Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +99,7 @@
 			children = (
 				00C2C3DE1FE334CA00721731 /* TSKit.Validation */,
 				00C2C3E91FE334CA00721731 /* TSKit.ValidationTests */,
+				00270D7F20603CCB002C778D /* TSKit.Validation */,
 				00C2C3DD1FE334CA00721731 /* Products */,
 				00B6D0741FF15CA30040D62F /* Frameworks */,
 			);
@@ -127,8 +108,8 @@
 		00C2C3DD1FE334CA00721731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00C2C3DC1FE334CA00721731 /* TSKit_Validation.framework */,
 				00C2C3E51FE334CA00721731 /* TSKit.ValidationTests.xctest */,
+				00270D7E20603CCB002C778D /* TSKit_Validation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,26 +149,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00C2C3D91FE334CA00721731 /* Headers */ = {
+		00270D7B20603CCB002C778D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C2C3ED1FE334CA00721731 /* TSKit_Validation.h in Headers */,
+				00270D8220603CCB002C778D /* TSKit_Validation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00C2C3DB1FE334CA00721731 /* TSKit.Validation */ = {
+		00270D7D20603CCB002C778D /* TSKit.Validation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00C2C3F01FE334CA00721731 /* Build configuration list for PBXNativeTarget "TSKit.Validation" */;
+			buildConfigurationList = 00270D8320603CCB002C778D /* Build configuration list for PBXNativeTarget "TSKit.Validation" */;
 			buildPhases = (
-				00C2C3D71FE334CA00721731 /* Sources */,
-				00C2C3D81FE334CA00721731 /* Frameworks */,
-				00C2C3D91FE334CA00721731 /* Headers */,
-				00C2C3DA1FE334CA00721731 /* Resources */,
-				00C2C3F61FE334E800721731 /* ShellScript */,
+				00270D7920603CCB002C778D /* Sources */,
+				00270D7A20603CCB002C778D /* Frameworks */,
+				00270D7B20603CCB002C778D /* Headers */,
+				00270D7C20603CCB002C778D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -195,7 +175,7 @@
 			);
 			name = TSKit.Validation;
 			productName = TSKit.Validation;
-			productReference = 00C2C3DC1FE334CA00721731 /* TSKit_Validation.framework */;
+			productReference = 00270D7E20603CCB002C778D /* TSKit_Validation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		00C2C3E41FE334CA00721731 /* TSKit.ValidationTests */ = {
@@ -209,7 +189,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				00C2C3E81FE334CA00721731 /* PBXTargetDependency */,
 			);
 			name = TSKit.ValidationTests;
 			productName = TSKit.ValidationTests;
@@ -226,9 +205,8 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Arkadiy Glushchevsky";
 				TargetAttributes = {
-					00C2C3DB1FE334CA00721731 = {
+					00270D7D20603CCB002C778D = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					00C2C3E41FE334CA00721731 = {
@@ -249,14 +227,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00C2C3DB1FE334CA00721731 /* TSKit.Validation */,
+				00270D7D20603CCB002C778D /* TSKit.Validation */,
 				00C2C3E41FE334CA00721731 /* TSKit.ValidationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00C2C3DA1FE334CA00721731 /* Resources */ = {
+		00270D7C20603CCB002C778D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,44 +250,11 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		00C2C3F61FE334E800721731 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\nbuildNumber=$(date -u \"+%m%d%Y.%H%M.%S\")\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $buildNumber\" \"$INFOPLIST_FILE\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		00C2C3D71FE334CA00721731 /* Sources */ = {
+		00270D7920603CCB002C778D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C2C4131FE3356B00721731 /* ValidatableProperty.swift in Sources */,
-				00B6D0731FF14C4A0040D62F /* Validatable.swift in Sources */,
-				00C2C40D1FE3356B00721731 /* Countable.swift in Sources */,
-				00C2C40E1FE3356B00721731 /* EmailValidator.swift in Sources */,
-				00C2C4141FE3356B00721731 /* NonEmptyValidator.swift in Sources */,
-				00C2C41A1FE3356B00721731 /* NilValidator.swift in Sources */,
-				00C2C4101FE3356B00721731 /* PatternValidator.swift in Sources */,
-				00C2C41C1FE3356B00721731 /* ValueValidator.swift in Sources */,
-				00C2C4191FE3356B00721731 /* AnyValidator.swift in Sources */,
-				00C2C4181FE3356B00721731 /* InvertedValidator.swift in Sources */,
-				00C2C41B1FE3356B00721731 /* AnyValidatableViewModel.swift in Sources */,
-				00C2C4111FE3356B00721731 /* LettersValidator.swift in Sources */,
-				00C2C40B1FE3356B00721731 /* ClosureValidator.swift in Sources */,
-				00C2C4171FE3356B00721731 /* LengthValidator.swift in Sources */,
-				00C2C4161FE3356B00721731 /* CompoundValidator.swift in Sources */,
-				00C2C4121FE3356B00721731 /* UrlValidator.swift in Sources */,
-				00C2C40C1FE3356B00721731 /* NumbersValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,15 +268,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		00C2C3E81FE334CA00721731 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00C2C3DB1FE334CA00721731 /* TSKit.Validation */;
-			targetProxy = 00C2C3E71FE334CA00721731 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
+		00270D8420603CCB002C778D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TSKit.Validation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00270D8520603CCB002C778D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TSKit.Validation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		00C2C3EE1FE334CA00721731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,53 +424,6 @@
 			};
 			name = Release;
 		};
-		00C2C3F11FE334CA00721731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P2NBF8K2F9;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TSKit.Validation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		00C2C3F21FE334CA00721731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P2NBF8K2F9;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TSKit.Validation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = NO;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		00C2C3F41FE334CA00721731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -525,20 +457,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00270D8320603CCB002C778D /* Build configuration list for PBXNativeTarget "TSKit.Validation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00270D8420603CCB002C778D /* Debug */,
+				00270D8520603CCB002C778D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00C2C3D61FE334CA00721731 /* Build configuration list for PBXProject "TSKit.Validation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00C2C3EE1FE334CA00721731 /* Debug */,
 				00C2C3EF1FE334CA00721731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00C2C3F01FE334CA00721731 /* Build configuration list for PBXNativeTarget "TSKit.Validation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00C2C3F11FE334CA00721731 /* Debug */,
-				00C2C3F21FE334CA00721731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
