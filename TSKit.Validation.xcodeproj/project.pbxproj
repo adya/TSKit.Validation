@@ -8,8 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		00270D8220603CCB002C778D /* TSKit_Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 00270D8020603CCB002C778D /* TSKit_Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		006182C5206046040079DD8C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 006182C3206046040079DD8C /* Cartfile */; };
 		00C2C3EB1FE334CA00721731 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3EA1FE334CA00721731 /* TSKit_ValidationTests.swift */; };
+		00F7E86C2067D6D500FC7CBE /* ClosureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3F91FE3356900721731 /* ClosureValidator.swift */; };
+		00F7E86D2067D6D500FC7CBE /* NilValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4081FE3356A00721731 /* NilValidator.swift */; };
+		00F7E86E2067D6D500FC7CBE /* CompoundValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4041FE3356A00721731 /* CompoundValidator.swift */; };
+		00F7E86F2067D6D500FC7CBE /* InvertedValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4061FE3356A00721731 /* InvertedValidator.swift */; };
+		00F7E8702067D6D500FC7CBE /* ValueValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C40A1FE3356B00721731 /* ValueValidator.swift */; };
+		00F7E8712067D6D500FC7CBE /* LengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4051FE3356A00721731 /* LengthValidator.swift */; };
+		00F7E8722067D6D500FC7CBE /* NonEmptyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4021FE3356A00721731 /* NonEmptyValidator.swift */; };
+		00F7E8732067D6D500FC7CBE /* PatternValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FE1FE3356900721731 /* PatternValidator.swift */; };
+		00F7E8742067D6D500FC7CBE /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FC1FE3356900721731 /* EmailValidator.swift */; };
+		00F7E8752067D6D500FC7CBE /* LettersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FF1FE3356900721731 /* LettersValidator.swift */; };
+		00F7E8762067D6D500FC7CBE /* NumbersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FA1FE3356900721731 /* NumbersValidator.swift */; };
+		00F7E8772067D6D500FC7CBE /* UrlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4001FE3356A00721731 /* UrlValidator.swift */; };
+		00F7E8782067D6D500FC7CBE /* AnyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4071FE3356A00721731 /* AnyValidator.swift */; };
+		00F7E8792067D6D500FC7CBE /* ValidatableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4011FE3356A00721731 /* ValidatableProperty.swift */; };
+		00F7E87A2067D6D500FC7CBE /* AnyValidatableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4091FE3356A00721731 /* AnyValidatableViewModel.swift */; };
+		00F7E87B2067D6D500FC7CBE /* Countable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FB1FE3356900721731 /* Countable.swift */; };
+		00F7E87C2067D6D500FC7CBE /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6D0721FF14C4A0040D62F /* Validatable.swift */; };
+		00F7E87E2067D96500FC7CBE /* TSKit_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */; };
+		00F7E87F2067D97000FC7CBE /* TSKit_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7720603B04002C778D /* TSKit_Core.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +58,7 @@
 		00C2C4081FE3356A00721731 /* NilValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NilValidator.swift; sourceTree = "<group>"; };
 		00C2C4091FE3356A00721731 /* AnyValidatableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyValidatableViewModel.swift; sourceTree = "<group>"; };
 		00C2C40A1FE3356B00721731 /* ValueValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueValidator.swift; sourceTree = "<group>"; };
+		00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSKit_Log.framework; path = Carthage/Build/iOS/TSKit_Log.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F7E87E2067D96500FC7CBE /* TSKit_Log.framework in Frameworks */,
+				00F7E87F2067D97000FC7CBE /* TSKit_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +112,7 @@
 		00B6D0741FF15CA30040D62F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */,
 				00270D7720603B04002C778D /* TSKit_Core.framework */,
 			);
 			name = Frameworks;
@@ -241,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006182C5206046040079DD8C /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +280,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F7E8752067D6D500FC7CBE /* LettersValidator.swift in Sources */,
+				00F7E87C2067D6D500FC7CBE /* Validatable.swift in Sources */,
+				00F7E8712067D6D500FC7CBE /* LengthValidator.swift in Sources */,
+				00F7E8792067D6D500FC7CBE /* ValidatableProperty.swift in Sources */,
+				00F7E87A2067D6D500FC7CBE /* AnyValidatableViewModel.swift in Sources */,
+				00F7E8702067D6D500FC7CBE /* ValueValidator.swift in Sources */,
+				00F7E8742067D6D500FC7CBE /* EmailValidator.swift in Sources */,
+				00F7E86E2067D6D500FC7CBE /* CompoundValidator.swift in Sources */,
+				00F7E87B2067D6D500FC7CBE /* Countable.swift in Sources */,
+				00F7E8782067D6D500FC7CBE /* AnyValidator.swift in Sources */,
+				00F7E86F2067D6D500FC7CBE /* InvertedValidator.swift in Sources */,
+				00F7E8772067D6D500FC7CBE /* UrlValidator.swift in Sources */,
+				00F7E8722067D6D500FC7CBE /* NonEmptyValidator.swift in Sources */,
+				00F7E8732067D6D500FC7CBE /* PatternValidator.swift in Sources */,
+				00F7E86D2067D6D500FC7CBE /* NilValidator.swift in Sources */,
+				00F7E86C2067D6D500FC7CBE /* ClosureValidator.swift in Sources */,
+				00F7E8762067D6D500FC7CBE /* NumbersValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +324,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = TSKit.Validation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -308,6 +347,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = TSKit.Validation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
