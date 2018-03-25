@@ -2,12 +2,12 @@
 //  TSKit_ValidationTests.swift
 //  TSKit.ValidationTests
 //
-//  Created by Arkadiy Glushchevsky on 12/15/17.
-//  Copyright © 2017 Arkadiy Glushchevsky. All rights reserved.
+//  Created by Arkadii Glushchevskyi on 3/25/18.
+//  Copyright © 2018 Arkadiy Glushchevsky. All rights reserved.
 //
 
 import XCTest
-@testable import TSKit_Validation
+import TSKit_Validation
 
 class TSKit_ValidationTests: XCTestCase {
     
@@ -22,8 +22,8 @@ class TSKit_ValidationTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let validator = LengthValidator(minimumLength: 6, maximumLength: 20)
+        XCTAssert(validator.validate("ValidString"), "Not valid")
     }
     
     func testPerformanceExample() {

@@ -20,17 +20,18 @@ public class ValueValidator<ValueType : Comparable> : AnyValidator {
             
         }
         
+        // This must be `Any` as a workaround for "cyclic metadata dependency" (see: https://bugs.swift.org/browse/SR-4383) occurring when `Bound` uses outter `ValueType` generic type.
         /// Boundary value.
-        public let value: ValueType
+        public let value: Any
         
         /// Type of the `Bound`
         public let kind: Bound.Kind
         
-        static func inclusive(_ value: ValueType) -> Bound {
+        static func inclusive(_ value: Any) -> Bound {
             return Bound(value: value, kind: .inclusive)
         }
         
-        static func exclusive(_ value: ValueType) -> Bound {
+        static func exclusive(_ value: Any) -> Bound {
             return Bound(value: value, kind: .exclusive)
         }
     }
@@ -119,19 +120,19 @@ public class ValueValidator<ValueType : Comparable> : AnyValidator {
         }
         let inLowerBound = self.lowerBound.flatMap {
             switch $0.kind {
-            case .exclusive: return $0.value < valueT
-            case .inclusive: return $0.value <= valueT
+            case .exclusive: return ($0.value as! ValueType) < valueT
+            case .inclusive: return ($0.value as! ValueType) <= valueT
             }
             } ?? true
         
         let inUpperBound = self.upperBound.flatMap {
             switch $0.kind {
-            case .exclusive: return valueT < $0.value
-            case .inclusive: return valueT <= $0.value
+            case .exclusive: return valueT < ($0.value as! ValueType)
+            case .inclusive: return valueT <= ($0.value as! ValueType)
             }
             } ?? true
         
-        let isExactValue = lowerBound?.value == upperBound?.value
+        let isExactValue = (lowerBound?.value  as? ValueType) == (upperBound?.value  as? ValueType)
         
         if isExactValue {
             let isValid = inLowerBound && inUpperBound
@@ -139,7 +140,7 @@ public class ValueValidator<ValueType : Comparable> : AnyValidator {
                 return false
             }
             if !isValid {
-                errors = [Errors.notEqual(value)]
+                errors = [Errors.notEqual(value as! ValueType)]
             }
         } else {
             if !inLowerBound {
@@ -152,10 +153,10 @@ public class ValueValidator<ValueType : Comparable> : AnyValidator {
     }
 }
 
-public func <<T>(_ x : ValueValidator<T>.Bound, _ y : ValueValidator<T>.Bound) -> Bool {
-    return x.value < y.value
+public func <<ValueType>(_ x : ValueValidator<ValueType>.Bound, _ y : ValueValidator<ValueType>.Bound) -> Bool {
+    return (x.value as! ValueType) < (y.value as! ValueType)
 }
 
-public func ==<T>(_ x : ValueValidator<T>.Bound, _ y : ValueValidator<T>.Bound) -> Bool {
-    return x.value == y.value
+public func ==<ValueType>(_ x : ValueValidator<ValueType>.Bound, _ y : ValueValidator<ValueType>.Bound) -> Bool {
+    return (x.value as! ValueType) == (y.value as! ValueType)
 }

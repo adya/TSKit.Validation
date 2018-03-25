@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00270D8220603CCB002C778D /* TSKit_Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 00270D8020603CCB002C778D /* TSKit_Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00C2C3EB1FE334CA00721731 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3EA1FE334CA00721731 /* TSKit_ValidationTests.swift */; };
+		00629B5E2067EF5A00447340 /* TSKit_Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7E20603CCB002C778D /* TSKit_Validation.framework */; };
+		00629B682067EF6D00447340 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00629B662067EF6D00447340 /* Info.plist */; };
+		00629B692067EFB700447340 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00629B652067EF6D00447340 /* TSKit_ValidationTests.swift */; };
+		00629B6A2067F01500447340 /* TSKit_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7720603B04002C778D /* TSKit_Core.framework */; };
+		00629B6B2067F01500447340 /* TSKit_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */; };
 		00F7E86C2067D6D500FC7CBE /* ClosureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3F91FE3356900721731 /* ClosureValidator.swift */; };
 		00F7E86D2067D6D500FC7CBE /* NilValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4081FE3356A00721731 /* NilValidator.swift */; };
 		00F7E86E2067D6D500FC7CBE /* CompoundValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4041FE3356A00721731 /* CompoundValidator.swift */; };
@@ -30,18 +33,26 @@
 		00F7E87F2067D97000FC7CBE /* TSKit_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7720603B04002C778D /* TSKit_Core.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00629B5F2067EF5A00447340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C2C3D31FE334CA00721731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00270D7D20603CCB002C778D;
+			remoteInfo = TSKit.Validation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		00270D7720603B04002C778D /* TSKit_Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSKit_Core.framework; path = Carthage/Build/iOS/TSKit_Core.framework; sourceTree = "<group>"; };
 		00270D7E20603CCB002C778D /* TSKit_Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSKit_Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		00270D8020603CCB002C778D /* TSKit_Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKit_Validation.h; sourceTree = "<group>"; };
-		00270D8120603CCB002C778D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006182C3206046040079DD8C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		00629B592067EF5A00447340 /* TSKit.ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSKit.ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00629B652067EF6D00447340 /* TSKit_ValidationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSKit_ValidationTests.swift; sourceTree = "<group>"; };
+		00629B662067EF6D00447340 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B6D0721FF14C4A0040D62F /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		00C2C3DF1FE334CA00721731 /* TSKit_Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKit_Validation.h; sourceTree = "<group>"; };
 		00C2C3E01FE334CA00721731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00C2C3E51FE334CA00721731 /* TSKit.ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSKit.ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00C2C3EA1FE334CA00721731 /* TSKit_ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSKit_ValidationTests.swift; sourceTree = "<group>"; };
-		00C2C3EC1FE334CA00721731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C2C3F91FE3356900721731 /* ClosureValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureValidator.swift; sourceTree = "<group>"; };
 		00C2C3FA1FE3356900721731 /* NumbersValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersValidator.swift; sourceTree = "<group>"; };
 		00C2C3FB1FE3356900721731 /* Countable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countable.swift; sourceTree = "<group>"; };
@@ -71,23 +82,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00C2C3E21FE334CA00721731 /* Frameworks */ = {
+		00629B562067EF5A00447340 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00629B6A2067F01500447340 /* TSKit_Core.framework in Frameworks */,
+				00629B6B2067F01500447340 /* TSKit_Log.framework in Frameworks */,
+				00629B5E2067EF5A00447340 /* TSKit_Validation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00270D7F20603CCB002C778D /* TSKit.Validation */ = {
+		00629B642067EF6D00447340 /* TSKit.ValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				00270D8020603CCB002C778D /* TSKit_Validation.h */,
-				00270D8120603CCB002C778D /* Info.plist */,
+				00629B652067EF6D00447340 /* TSKit_ValidationTests.swift */,
+				00629B662067EF6D00447340 /* Info.plist */,
 			);
-			path = TSKit.Validation;
+			path = TSKit.ValidationTests;
 			sourceTree = "<group>";
 		};
 		00B6D0711FF145A00040D62F /* Default Validators */ = {
@@ -122,8 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				00C2C3DE1FE334CA00721731 /* TSKit.Validation */,
-				00C2C3E91FE334CA00721731 /* TSKit.ValidationTests */,
-				00270D7F20603CCB002C778D /* TSKit.Validation */,
+				00629B642067EF6D00447340 /* TSKit.ValidationTests */,
 				00C2C3DD1FE334CA00721731 /* Products */,
 				00B6D0741FF15CA30040D62F /* Frameworks */,
 			);
@@ -132,8 +145,8 @@
 		00C2C3DD1FE334CA00721731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00C2C3E51FE334CA00721731 /* TSKit.ValidationTests.xctest */,
 				00270D7E20603CCB002C778D /* TSKit_Validation.framework */,
+				00629B592067EF5A00447340 /* TSKit.ValidationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,15 +160,6 @@
 				00C2C3E01FE334CA00721731 /* Info.plist */,
 			);
 			path = TSKit.Validation;
-			sourceTree = "<group>";
-		};
-		00C2C3E91FE334CA00721731 /* TSKit.ValidationTests */ = {
-			isa = PBXGroup;
-			children = (
-				00C2C3EA1FE334CA00721731 /* TSKit_ValidationTests.swift */,
-				00C2C3EC1FE334CA00721731 /* Info.plist */,
-			);
-			path = TSKit.ValidationTests;
 			sourceTree = "<group>";
 		};
 		00C2C3F81FE3355100721731 /* Sources */ = {
@@ -178,7 +182,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00270D8220603CCB002C778D /* TSKit_Validation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,21 +206,22 @@
 			productReference = 00270D7E20603CCB002C778D /* TSKit_Validation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		00C2C3E41FE334CA00721731 /* TSKit.ValidationTests */ = {
+		00629B582067EF5A00447340 /* TSKit.ValidationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00C2C3F31FE334CA00721731 /* Build configuration list for PBXNativeTarget "TSKit.ValidationTests" */;
+			buildConfigurationList = 00629B612067EF5A00447340 /* Build configuration list for PBXNativeTarget "TSKit.ValidationTests" */;
 			buildPhases = (
-				00C2C3E11FE334CA00721731 /* Sources */,
-				00C2C3E21FE334CA00721731 /* Frameworks */,
-				00C2C3E31FE334CA00721731 /* Resources */,
+				00629B552067EF5A00447340 /* Sources */,
+				00629B562067EF5A00447340 /* Frameworks */,
+				00629B572067EF5A00447340 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00629B602067EF5A00447340 /* PBXTargetDependency */,
 			);
 			name = TSKit.ValidationTests;
 			productName = TSKit.ValidationTests;
-			productReference = 00C2C3E51FE334CA00721731 /* TSKit.ValidationTests.xctest */;
+			productReference = 00629B592067EF5A00447340 /* TSKit.ValidationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +238,7 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					00C2C3E41FE334CA00721731 = {
+					00629B582067EF5A00447340 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -253,7 +257,7 @@
 			projectRoot = "";
 			targets = (
 				00270D7D20603CCB002C778D /* TSKit.Validation */,
-				00C2C3E41FE334CA00721731 /* TSKit.ValidationTests */,
+				00629B582067EF5A00447340 /* TSKit.ValidationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,10 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00629B682067EF6D00447340 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00C2C3E31FE334CA00721731 /* Resources */ = {
+		00629B572067EF5A00447340 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,15 +305,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00C2C3E11FE334CA00721731 /* Sources */ = {
+		00629B552067EF5A00447340 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C2C3EB1FE334CA00721731 /* TSKit_ValidationTests.swift in Sources */,
+				00629B692067EFB700447340 /* TSKit_ValidationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00629B602067EF5A00447340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00270D7D20603CCB002C778D /* TSKit.Validation */;
+			targetProxy = 00629B5F2067EF5A00447340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00270D8420603CCB002C778D /* Debug */ = {
@@ -352,6 +365,36 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glar.tskit.validation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00629B622067EF5A00447340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = TSKit.ValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.TSKit-ValidationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00629B632067EF5A00447340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2NBF8K2F9;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = TSKit.ValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.TSKit-ValidationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,36 +513,6 @@
 			};
 			name = Release;
 		};
-		00C2C3F41FE334CA00721731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P2NBF8K2F9;
-				INFOPLIST_FILE = TSKit.ValidationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.TSKit-ValidationTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		00C2C3F51FE334CA00721731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P2NBF8K2F9;
-				INFOPLIST_FILE = TSKit.ValidationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glar.TSKit-ValidationTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,20 +525,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		00629B612067EF5A00447340 /* Build configuration list for PBXNativeTarget "TSKit.ValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00629B622067EF5A00447340 /* Debug */,
+				00629B632067EF5A00447340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00C2C3D61FE334CA00721731 /* Build configuration list for PBXProject "TSKit.Validation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00C2C3EE1FE334CA00721731 /* Debug */,
 				00C2C3EF1FE334CA00721731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00C2C3F31FE334CA00721731 /* Build configuration list for PBXNativeTarget "TSKit.ValidationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00C2C3F41FE334CA00721731 /* Debug */,
-				00C2C3F51FE334CA00721731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
