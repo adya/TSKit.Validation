@@ -1,14 +1,14 @@
+import Foundation
+
 /// Validates an url.
 public class UrlValidator : PatternValidator {
     
-    public enum ValidationError: Error, CustomStringConvertible {
+    public enum ValidationError: String, LocalizedError {
         
-        case missmatchUrl
+        case missmatchUrl = "Not a valid URL"
         
         public var description: String {
-            switch self {
-            case .missmatchUrl: return "Not a valid URL"
-            }
+            return rawValue
         }
     }
     

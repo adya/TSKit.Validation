@@ -1,14 +1,14 @@
+import Foundation
+
 /// Validates letters only.
 public class LettersValidator : PatternValidator {
   
-    public enum ValidationError: Error, CustomStringConvertible {
+    public enum ValidationError: String, LocalizedError {
         
-        case missmatchLetters
+        case missmatchLetters = "String contains non-letter characters"
         
         public var description: String {
-            switch self {
-            case .missmatchLetters: return "String contains non-letter characters"
-            }
+            return rawValue
         }
     }
     

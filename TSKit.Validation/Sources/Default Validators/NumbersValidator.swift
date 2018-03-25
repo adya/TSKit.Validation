@@ -1,14 +1,14 @@
+import Foundation
+
 /// Validates number only.
 public class NumbersValidator : PatternValidator {
     
-    public enum ValidationError: Error, CustomStringConvertible {
+    public enum ValidationError: String, LocalizedError {
         
-        case missmatchNumbers
+        case missmatchNumbers = "String contains non-numeric characters"
         
         public var description: String {
-            switch self {
-            case .missmatchNumbers: return "String contains non-numeric characters"
-            }
+            return rawValue
         }
     }
     

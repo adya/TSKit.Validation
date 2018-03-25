@@ -1,8 +1,9 @@
+import Foundation
 import TSKit_Core
     
 public class PatternValidator : AnyValidator {
     
-    public enum ValidationError: Error, CustomStringConvertible {
+    public enum ValidationError: LocalizedError {
         
         /// Value doesn't match the pattern.
         case missmatch(pattern: String)

@@ -1,16 +1,16 @@
+import Foundation
+
 /// Requires value to be not `nil`.
 /// - Parameter Any: Accepts any values.
 public class NilValidator : AnyValidator {
     
-    public enum ValidationError: Error, CustomStringConvertible {
+    public enum ValidationError: String, LocalizedError {
         
         /// Value is `nil`.
-        case empty
+        case empty = "Value is nil"
         
         public var description: String {
-            switch self {
-            case .empty: return "Value is `nil`"
-            }
+            return rawValue
         }
     }
     

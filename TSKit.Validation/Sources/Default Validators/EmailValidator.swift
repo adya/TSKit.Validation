@@ -1,14 +1,14 @@
+import Foundation
+
 /// Validates an email.
 public class EmailValidator : PatternValidator {
     
-    public enum ValidationError: Error, CustomStringConvertible {
+    public enum ValidationError: String, LocalizedError {
         
-        case missmatchEmail
+        case missmatchEmail = "Not a valid email"
         
         public var description: String {
-            switch self {
-            case .missmatchEmail: return "Not a valid email"
-            }
+            return rawValue
         }
     }
     
