@@ -11,7 +11,6 @@
 		00629B682067EF6D00447340 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00629B662067EF6D00447340 /* Info.plist */; };
 		00629B692067EFB700447340 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00629B652067EF6D00447340 /* TSKit_ValidationTests.swift */; };
 		00629B6A2067F01500447340 /* TSKit_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7720603B04002C778D /* TSKit_Core.framework */; };
-		00629B6B2067F01500447340 /* TSKit_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */; };
 		00F7E86C2067D6D500FC7CBE /* ClosureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3F91FE3356900721731 /* ClosureValidator.swift */; };
 		00F7E86D2067D6D500FC7CBE /* NilValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4081FE3356A00721731 /* NilValidator.swift */; };
 		00F7E86E2067D6D500FC7CBE /* CompoundValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4041FE3356A00721731 /* CompoundValidator.swift */; };
@@ -29,7 +28,6 @@
 		00F7E87A2067D6D500FC7CBE /* AnyValidatableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C4091FE3356A00721731 /* AnyValidatableViewModel.swift */; };
 		00F7E87B2067D6D500FC7CBE /* Countable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C2C3FB1FE3356900721731 /* Countable.swift */; };
 		00F7E87C2067D6D500FC7CBE /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6D0721FF14C4A0040D62F /* Validatable.swift */; };
-		00F7E87E2067D96500FC7CBE /* TSKit_Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */; };
 		00F7E87F2067D97000FC7CBE /* TSKit_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7720603B04002C778D /* TSKit_Core.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +67,6 @@
 		00C2C4081FE3356A00721731 /* NilValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NilValidator.swift; sourceTree = "<group>"; };
 		00C2C4091FE3356A00721731 /* AnyValidatableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyValidatableViewModel.swift; sourceTree = "<group>"; };
 		00C2C40A1FE3356B00721731 /* ValueValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueValidator.swift; sourceTree = "<group>"; };
-		00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSKit_Log.framework; path = Carthage/Build/iOS/TSKit_Log.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F7E87E2067D96500FC7CBE /* TSKit_Log.framework in Frameworks */,
 				00F7E87F2067D97000FC7CBE /* TSKit_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00629B6A2067F01500447340 /* TSKit_Core.framework in Frameworks */,
-				00629B6B2067F01500447340 /* TSKit_Log.framework in Frameworks */,
 				00629B5E2067EF5A00447340 /* TSKit_Validation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +121,6 @@
 		00B6D0741FF15CA30040D62F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00F7E87D2067D96500FC7CBE /* TSKit_Log.framework */,
 				00270D7720603B04002C778D /* TSKit_Core.framework */,
 			);
 			name = Frameworks;

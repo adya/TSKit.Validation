@@ -1,5 +1,3 @@
-import TSKit_Log
-
 /**
  Defines ViewModel which will have ValidatableProperties.
  ### Common usage example:
@@ -16,7 +14,7 @@ import TSKit_Log
     }
  ```
  */
-public protocol AnyValidatableViewModel : Validatable, Loggable {
+public protocol AnyValidatableViewModel : Validatable {
     
     /// A flag indicating whether or not view model's `Validatable` properties are all valid.
     /// - Returns: `true` if all `validatables` have passed validation.
@@ -31,12 +29,6 @@ public extension AnyValidatableViewModel {
     
     var isValid: Bool {
         let failedValidatables = validatables.filter { !$0.isValid }
-        if !failedValidatables.isEmpty {
-            let errors = failedValidatables.flatMap { $0.errors }
-                                           .map { $0.localizedDescription }
-                                           .joined(separator: ",\n")
-            log.debug("Failed with errors: \(errors).")
-        }
         return failedValidatables.isEmpty
     }
     
