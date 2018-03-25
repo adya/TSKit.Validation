@@ -5,8 +5,21 @@
 /// - Parameter Countable: Validates count of any `Countable`.
 public class LengthValidator : ValueValidator<Int> {
     
-    public override class var defaultValueName: String {
+    override class var defaultValueName: String {
         return "length"
+    }
+    
+    public init(minimumLength: Int, maximumLength: Int) {
+        super.init(lowerBound: .inclusive(minimumLength),
+                   upperBound: .inclusive(maximumLength))
+    }
+    
+    public init(minimumLength: Int) {
+        super.init(lowerBound: .inclusive(minimumLength))
+    }
+    
+    public init(maximumLength: Int) {
+        super.init(upperBound: .inclusive(maximumLength))
     }
     
     public override func canValidate(_ value: Any?) -> Bool {
@@ -20,4 +33,3 @@ public class LengthValidator : ValueValidator<Int> {
         return super.validate(countable.count)
     }
 }
-

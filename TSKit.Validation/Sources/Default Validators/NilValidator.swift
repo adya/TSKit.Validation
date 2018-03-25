@@ -14,6 +14,8 @@ public class NilValidator : AnyValidator {
         }
     }
     
+    public init() {}
+    
     public let errors: [Error] = [ValidationError.empty]
     
     public func canValidate(_ value: Any?) -> Bool {
@@ -23,6 +25,4 @@ public class NilValidator : AnyValidator {
     public func validate(_ value: Any?) -> Bool {
         return value != nil
     }
-    
-    public init() {}
 }

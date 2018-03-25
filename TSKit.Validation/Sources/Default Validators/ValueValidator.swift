@@ -2,7 +2,7 @@
 public class ValueValidator<ValueType : Comparable> : AnyValidator {
     
     /// Default name identyfing validatable `value`.
-    public class var defaultValueName: String {
+    class var defaultValueName: String {
         return "value"
     }
     
@@ -52,46 +52,29 @@ public class ValueValidator<ValueType : Comparable> : AnyValidator {
     
     public var errors: [Error] = []
     
-    private init(lowerBound : Bound?,
-                 upperBound : Bound?,
-                 valueName: String?) {
-        var minBound = lowerBound
-        var maxBound = upperBound
-        if let lowerBound = lowerBound,
-            let upperBound = upperBound {
-            minBound = min(lowerBound, upperBound)
-            maxBound = max(lowerBound, upperBound)
-        }
-        self.lowerBound = minBound
-        self.upperBound = maxBound
+    public init(lowerBound : Bound, valueName: String? = nil) {
+        self.lowerBound = lowerBound
+        self.upperBound = nil
         self.valueName = valueName ?? type(of: self).defaultValueName
     }
     
-    public convenience init(lowerBound : Bound, valueName: String? = nil) {
-        self.init(lowerBound: lowerBound,
-                  upperBound: nil,
-                  valueName: valueName)
+    public init(upperBound : Bound, valueName: String? = nil) {
+        self.lowerBound = nil
+        self.upperBound = upperBound
+        self.valueName = valueName ?? type(of: self).defaultValueName
     }
     
-    public convenience init(upperBound : Bound, valueName: String? = nil) {
-        self.init(lowerBound: nil,
-                  upperBound: upperBound,
-                  valueName: valueName)
+    public init(lowerBound : Bound, upperBound : Bound, valueName: String? = nil) {
+        self.lowerBound = min(lowerBound, upperBound)
+        self.upperBound = max(lowerBound, upperBound)
+        self.valueName = valueName ?? type(of: self).defaultValueName
     }
     
-    public convenience init(lowerBound : Bound,
-                            upperBound : Bound,
-                            valueName: String) {
-        self.init(lowerBound: lowerBound,
-                  upperBound: upperBound,
-                  valueName: valueName)
-    }
-    
-    public convenience init(exactValue : ValueType, valueName : String? = nil) {
+    public init(exactValue : ValueType, valueName : String? = nil) {
         let bound = Bound.inclusive(exactValue)
-        self.init(lowerBound: bound,
-                  upperBound: bound,
-                  valueName: valueName)
+        self.lowerBound = bound
+        self.upperBound = bound
+        self.valueName = valueName ?? type(of: self).defaultValueName
     }
     
     public convenience init(upperValue : ValueType, valueName: String? = nil) {
