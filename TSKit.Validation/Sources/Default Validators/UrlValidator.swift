@@ -3,17 +3,20 @@ import Foundation
 /// Validates an url.
 public class UrlValidator : PatternValidator {
     
-    public enum ValidationError: String, LocalizedError {
+    public enum ValidationError: String, Error {
         
-        case missmatchUrl = "Not a valid URL"
+        case mismatchUrl = "Not a valid URL"
         
         public var description: String {
             return rawValue
         }
     }
-    
-    public init() {
-        super.init(pattern: "(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+",
-                   error: ValidationError.missmatchUrl)
+
+    /// - Parameter allowSkippingScheme: Flag indicating whether scheme can be omitted in validating url.
+    /// Passing `true` will make  url valid even without scheme, passing `false` will require url to have scheme.
+    public init(allowSkippingScheme: Bool = false) {
+        let schemePart = "(?:(http|https)://)\(allowSkippingScheme ? "?" : "")"
+        super.init(pattern: "\(schemePart)([a-zA-Z0-9_\\-])+(?:[\\.|/]([a-zA-Z0-9_\\-])+)+",
+                   error: ValidationError.mismatchUrl)
     }
 }

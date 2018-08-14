@@ -4,7 +4,7 @@ import Foundation
 /// - Parameter Any: Accepts any values.
 public class NilValidator : AnyValidator {
     
-    public enum ValidationError: String, LocalizedError {
+    public enum ValidationError: String, Error {
         
         /// Value is `nil`.
         case empty = "Value is nil"
