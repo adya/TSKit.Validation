@@ -1,3 +1,8 @@
+/// - Since: 01/20/2018
+/// - Author: Arkadii Hlushchevskyi
+/// - Copyright: © 2018. Arkadii Hlushchevskyi.
+/// - Seealso: https://github.com/adya/TSKit.Validation/blob/master/LICENSE.md
+
 /// - Parameter String: Validates `String`'s length.
 /// - Parameter Array: Validates `Array`'s size.
 /// - Parameter Set: Validates `Set`'s size.

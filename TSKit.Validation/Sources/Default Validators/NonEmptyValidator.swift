@@ -1,3 +1,8 @@
+/// - Since: 01/20/2018
+/// - Author: Arkadii Hlushchevskyi
+/// - Copyright: © 2018. Arkadii Hlushchevskyi.
+/// - Seealso: https://github.com/adya/TSKit.Validation/blob/master/LICENSE.md
+
 /// Requires value to be not empty.
 /// - Parameter String: Validates non empty `String`.
 /// - Parameter Array: Validates non empty `Array`.

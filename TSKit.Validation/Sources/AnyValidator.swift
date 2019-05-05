@@ -1,3 +1,8 @@
+/// - Since: 01/20/2018
+/// - Author: Arkadii Hlushchevskyi
+/// - Copyright: © 2018. Arkadii Hlushchevskyi.
+/// - Seealso: https://github.com/adya/TSKit.Validation/blob/master/LICENSE.md
+
 /*
  `AnyValidator` checks any passed value to meet validation rule of that validator.
  - Version: 2.0

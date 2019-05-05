@@ -1,3 +1,8 @@
+/// - Since: 01/20/2018
+/// - Author: Arkadii Hlushchevskyi
+/// - Copyright: © 2018. Arkadii Hlushchevskyi.
+/// - Seealso: https://github.com/adya/TSKit.Validation/blob/master/LICENSE.md
+
 /*
 Generic wrapper containing a value and a set of `Validators` to validate it.
  - Version: 2.0
