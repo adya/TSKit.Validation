@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005B400622ABFBF700AF2893 /* AlphaNumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B400522ABFBF600AF2893 /* AlphaNumericValidator.swift */; };
 		00629B5E2067EF5A00447340 /* TSKit_Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7E20603CCB002C778D /* TSKit_Validation.framework */; };
 		00629B692067EFB700447340 /* TSKit_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00629B652067EF6D00447340 /* TSKit_ValidationTests.swift */; };
 		00629B6A2067F01500447340 /* TSKit_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00270D7720603B04002C778D /* TSKit_Core.framework */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		00270D7720603B04002C778D /* TSKit_Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSKit_Core.framework; path = Carthage/Build/iOS/TSKit_Core.framework; sourceTree = "<group>"; };
 		00270D7E20603CCB002C778D /* TSKit_Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSKit_Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		005B400522ABFBF600AF2893 /* AlphaNumericValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaNumericValidator.swift; sourceTree = "<group>"; };
 		006182C3206046040079DD8C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		00629B592067EF5A00447340 /* TSKit.ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSKit.ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00629B652067EF6D00447340 /* TSKit_ValidationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSKit_ValidationTests.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				00C2C3FC1FE3356900721731 /* EmailValidator.swift */,
 				00C2C3FF1FE3356900721731 /* LettersValidator.swift */,
 				00C2C3FA1FE3356900721731 /* NumbersValidator.swift */,
+				005B400522ABFBF600AF2893 /* AlphaNumericValidator.swift */,
 				00C2C4001FE3356A00721731 /* UrlValidator.swift */,
 			);
 			path = "Default Validators";
@@ -288,6 +291,7 @@
 				00F7E87B2067D6D500FC7CBE /* Countable.swift in Sources */,
 				00F7E8782067D6D500FC7CBE /* AnyValidator.swift in Sources */,
 				00F7E86F2067D6D500FC7CBE /* InvertedValidator.swift in Sources */,
+				005B400622ABFBF700AF2893 /* AlphaNumericValidator.swift in Sources */,
 				00F7E8772067D6D500FC7CBE /* UrlValidator.swift in Sources */,
 				00F7E8722067D6D500FC7CBE /* NonEmptyValidator.swift in Sources */,
 				00F7E8732067D6D500FC7CBE /* PatternValidator.swift in Sources */,
